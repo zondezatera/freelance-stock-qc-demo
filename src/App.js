@@ -3,8 +3,13 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import LoginPage from './feature/login'
-import HomePage from './feature/home'
+import {
+  LoginPage,
+  HomePage,
+  CreatePoPage,
+  CalendarPage,
+  OtherPage
+} from './page'
 
 const App = () => {
   return (
@@ -15,6 +20,15 @@ const App = () => {
           </Route>
           <Route path="/home">
             <HomePage />
+          </Route>
+          <Route path="/createPo">
+            <CreatePoPage />
+          </Route>
+          <Route path="/calendar">
+            <CalendarPage />
+          </Route>
+          <Route path="/other">
+            <OtherPage />
           </Route>
         </Switch>
     </div>

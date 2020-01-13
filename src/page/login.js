@@ -22,7 +22,7 @@ const LoginPage = () => {
             />
         </Form.Item>
         <Form.Item>
-          <div className="login-form-button">
+          <div className="form-button">
             <Link to="/home">
               <Button type="primary" htmlType="button" size='large'>
                 Log in

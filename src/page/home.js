@@ -11,9 +11,9 @@ const HomePage = () => {
           <Card bordered={false} style={{width: 300}}>
             <div style={{textAlign: 'center'}}>
               <Icon type="fund" style={{ fontSize: '60px', display: 'block', paddingBottom: 30 }} />
-              <Link to="/home">
+              <Link to="/createPo">
                 <Button type="primary" htmlType="button" size='large'>
-                  Log in
+                  Create PO
                 </Button>
               </Link>
             </div>
@@ -23,7 +23,7 @@ const HomePage = () => {
           <Card bordered={false} style={{width: 300}}>
             <div style={{textAlign: 'center'}}>
               <Icon type="calendar" style={{ fontSize: '60px', display: 'block', paddingBottom: 30 }} />
-              <Link to="/home">
+              <Link to="/calendar">
                 <Button type="primary" htmlType="button" size='large'>
                   Calendar
                 </Button>
@@ -35,7 +35,7 @@ const HomePage = () => {
           <Card bordered={false} style={{width: 300}}>
             <div style={{textAlign: 'center'}}>
               <Icon type="appstore" style={{ fontSize: '60px', display: 'block', paddingBottom: 30 }} />
-              <Link to="/home">
+              <Link to="/other">
                 <Button type="primary" htmlType="button" size='large'>
                   Other
                 </Button>
