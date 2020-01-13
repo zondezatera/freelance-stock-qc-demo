@@ -24,3 +24,7 @@ code {
   align-self: center;
   margin: 0 auto;
 }
+
+.login-form-button {
+  text-align: center;
+}
