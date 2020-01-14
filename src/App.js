@@ -15,25 +15,13 @@ import {
 const App = () => {
   return (
     <Switch>
-        <Route exact path="/">
-          <LoginPage />
-        </Route>
-        <Route path="/home">
-          <HomePage />
-        </Route>
-        <Route path="/createPo">
-          <CreatePoPage />
-        </Route>
-        <Route path="/calendar">
-          <CalendarPage />
-        </Route>
-        <Route path="/daily">
-          <DailyPage />
-        </Route>
-        <Route path="/other">
-          <OtherPage />
-        </Route>
-      </Switch>
+      <Route exact path="/" component={LoginPage} />
+      <Route exact path="/home" component={HomePage} />
+      <Route exact path="/createPo" component={CreatePoPage} />
+      <Route exact path="/calendar" component={CalendarPage}/>
+      <Route exact path="/daily" component={DailyPage} />
+      <Route exact path="/other" component={OtherPage} />
+    </Switch>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import 'antd/dist/antd.css';
 import './index.css';
 import App from './App';
@@ -8,9 +8,9 @@ import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router basename={process.env.PUBLIC_URL}>
     <App />
-  </BrowserRouter>, 
+  </Router>, 
   document.getElementById('root')
 );
 
