@@ -63,7 +63,7 @@ const CalendarPage = () => {
         <Link to="/home">
           <Button htmlType="button" size='large' style={{marginRight: 10}}>ย้อนกลับ</Button>
         </Link>
-        <Link to="/home">
+        <Link to="/daily">
           <Button type="primary" htmlType="button" size='large'>วันปัจจุบัน</Button>
         </Link>
         <Calendar dateCellRender={dateCellRender} monthCellRender={monthCellRender} />

@@ -8,7 +8,8 @@ import {
   HomePage,
   CreatePoPage,
   CalendarPage,
-  OtherPage
+  OtherPage,
+  DailyPage
 } from './page'
 
 const App = () => {
@@ -25,6 +26,9 @@ const App = () => {
         </Route>
         <Route path="/calendar">
           <CalendarPage />
+        </Route>
+        <Route path="/daily">
+          <DailyPage />
         </Route>
         <Route path="/other">
           <OtherPage />
