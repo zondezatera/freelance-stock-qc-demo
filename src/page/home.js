@@ -13,7 +13,7 @@ const HomePage = () => {
               <Icon type="fund" style={{ fontSize: '60px', display: 'block', paddingBottom: 30 }} />
               <Link to="/createPo">
                 <Button type="primary" htmlType="button" size='large'>
-                  Create PO
+                  สร้าง PO
                 </Button>
               </Link>
             </div>
@@ -25,7 +25,7 @@ const HomePage = () => {
               <Icon type="calendar" style={{ fontSize: '60px', display: 'block', paddingBottom: 30 }} />
               <Link to="/calendar">
                 <Button type="primary" htmlType="button" size='large'>
-                  Calendar
+                  ปฏิทิน
                 </Button>
               </Link>
             </div>

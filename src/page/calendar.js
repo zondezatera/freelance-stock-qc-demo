@@ -1,31 +1,24 @@
 import React from 'react'
 import { Card, Calendar, Badge } from 'antd'
-
+import { Button } from 'antd';
+import { Link } from "react-router-dom";
 
 const getListData = (value) => {
   let listData;
   switch (value.date()) {
     case 8:
       listData = [
-        { type: 'warning', content: 'This is warning event.' },
-        { type: 'success', content: 'This is usual event.' },
+        { type: 'error', content: 'งานเปลี่ยนแปลงไม่ได้' },
       ];
       break;
     case 10:
       listData = [
-        { type: 'warning', content: 'This is warning event.' },
-        { type: 'success', content: 'This is usual event.' },
-        { type: 'error', content: 'This is error event.' },
+        { type: 'success', content: 'งานเปลี่ยนแปลงได้' },
       ];
       break;
     case 15:
       listData = [
-        { type: 'warning', content: 'This is warning event' },
-        { type: 'success', content: 'This is very long usual event。。....' },
-        { type: 'error', content: 'This is error event 1.' },
-        { type: 'error', content: 'This is error event 2.' },
-        { type: 'error', content: 'This is error event 3.' },
-        { type: 'error', content: 'This is error event 4.' },
+        { type: 'success', content: 'งานเปลี่ยนแปลงได้' },
       ];
       break;
     default:
@@ -65,12 +58,16 @@ const monthCellRender = (value) =>{
 
 const CalendarPage = () => {
   return (
-    <div className="container">
-      <section className="content">
+    <div className="container" style={{width: 700, height: 'auto'}}>
       <Card>
+        <Link to="/home">
+          <Button htmlType="button" size='large' style={{marginRight: 10}}>ย้อนกลับ</Button>
+        </Link>
+        <Link to="/home">
+          <Button type="primary" htmlType="button" size='large'>วันปัจจุบัน</Button>
+        </Link>
         <Calendar dateCellRender={dateCellRender} monthCellRender={monthCellRender} />
       </Card>
-      </section>
     </div>
   )
 }

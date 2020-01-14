@@ -13,25 +13,23 @@ import {
 
 const App = () => {
   return (
-    <div className="container">
-      <Switch>
-          <Route exact path="/">
-            <LoginPage />
-          </Route>
-          <Route path="/home">
-            <HomePage />
-          </Route>
-          <Route path="/createPo">
-            <CreatePoPage />
-          </Route>
-          <Route path="/calendar">
-            <CalendarPage />
-          </Route>
-          <Route path="/other">
-            <OtherPage />
-          </Route>
-        </Switch>
-    </div>
+    <Switch>
+        <Route exact path="/">
+          <LoginPage />
+        </Route>
+        <Route path="/home">
+          <HomePage />
+        </Route>
+        <Route path="/createPo">
+          <CreatePoPage />
+        </Route>
+        <Route path="/calendar">
+          <CalendarPage />
+        </Route>
+        <Route path="/other">
+          <OtherPage />
+        </Route>
+      </Switch>
   );
 }
 

@@ -10,12 +10,14 @@ const LoginPage = () => {
           <Form onSubmit={() => {}} className="login-form">
         <Form.Item>
             <Input
+              defaultValue="admin"
               prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
               placeholder="Username"
             />
         </Form.Item>
         <Form.Item>
             <Input
+              defaultValue="admin"
               prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
               type="password"
               placeholder="Password"

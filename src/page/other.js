@@ -1,70 +1,103 @@
 import React from 'react'
 import { Table, Divider, Tag, Card } from 'antd';
-const { Column, ColumnGroup } = Table;
+import { Button } from 'antd';
+import { Link } from "react-router-dom";
+import faker from 'faker'
+const { Column } = Table;
 
-const data = [
-  {
-    key: '1',
-    firstName: 'John',
-    lastName: 'Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
-    tags: ['nice', 'developer'],
-  },
-  {
-    key: '2',
-    firstName: 'Jim',
-    lastName: 'Green',
-    age: 42,
-    address: 'London No. 1 Lake Park',
-    tags: ['loser'],
-  },
-  {
-    key: '3',
-    firstName: 'Joe',
-    lastName: 'Black',
-    age: 32,
-    address: 'Sidney No. 1 Lake Park',
-    tags: ['cool', 'teacher'],
-  },
-];
+const levelName = ['ง่าย', 'ปกติ', 'ยาก']
+const selectorLV = faker.random.number(2)
+const data = [];
+const createMock = () => {
+  for (let index = 0; index < 20; index++) {
+    data.push(
+      {
+        key: faker.random.number(),
+        customName: faker.name.findName(),
+        size: faker.random.number(),
+        w1: faker.random.number(100),
+        w2: faker.random.number(100),
+        w3: faker.random.number(100),
+        w: [levelName[selectorLV]],
+        wc: [levelName[selectorLV]],
+        qc: [levelName[selectorLV]],
+      }
+    )
+  }
+}
+
+createMock()
 
 const OtherPage = () => {
   return (
-    <div className="container">
+    <div className="container" style={{height: 'auto'}}>
       <section className="content">
         <Card>
-        <Table dataSource={data}>
-            <Column title="First Name" dataIndex="firstName" key="firstName" />
-            <Column title="Last Name" dataIndex="lastName" key="lastName" />
-          <Column title="Age" dataIndex="age" key="age" />
-          <Column title="Address" dataIndex="address" key="address" />
-          <Column
-            title="Tags"
-            dataIndex="tags"
-            key="tags"
-            render={tags => (
-              <span>
-                {tags.map(tag => (
-                  <Tag color="blue" key={tag}>
-                    {tag}
-                  </Tag>
-                ))}
-              </span>
-            )}
-          />
-          <Column
-            title="Action"
-            key="action"
-            render={(text, record) => (
-              <span>
-                <a>Invite {record.lastName}</a>
-                <Divider type="vertical" />
-                <a>Delete</a>
-              </span>
-            )}
-          />
-        </Table>
+          <Link to="/home">
+            <Button htmlType="button" size='large' style={{marginRight: 10}}>ย้อนกลับ</Button>
+            <Button htmlType="button" type="primary" size='large' style={{marginRight: 10}}>เพิ่มสินค้า</Button>
+          </Link>
+          <Table dataSource={data} style={{marginTop: 20}}>
+            <Column title="รหัสสินค้า" dataIndex="key" key="key" />
+            <Column title="ชื่อลูกค้า" dataIndex="customName" key="customName" />
+            <Column title="ขนาดสินค้า" dataIndex="size" key="size" />
+            <Column title="ไม้" dataIndex="w1" key="w1" />
+            <Column title="ตะปู" dataIndex="w2" key="w2" />
+            <Column title="ลูกเต๋า" dataIndex="w3" key="w3" />
+            <Column
+              title="ใส่ไม้"
+              dataIndex="w"
+              key="w"
+              render={tags => (
+                <span>
+                  {tags.map(tag => (
+                    <Tag color="blue" key={tag}>
+                      {tag}
+                    </Tag>
+                  ))}
+                </span>
+              )}
+            />
+            <Column
+              title="ประกอบ"
+              dataIndex="wc"
+              key="wc"
+              render={tags => (
+                <span>
+                  {tags.map(tag => (
+                    <Tag color="blue" key={tag}>
+                      {tag}
+                    </Tag>
+                  ))}
+                </span>
+              )}
+            />
+            <Column
+              title="QC"
+              dataIndex="qc"
+              key="qc"
+              render={tags => (
+                <span>
+                  {tags.map(tag => (
+                    <Tag color="blue" key={tag}>
+                      {tag}
+                    </Tag>
+                  ))}
+                </span>
+              )}
+            />
+            <Column
+              title=""
+              key="action"
+              render={(text, record) => (
+                <span>
+                  <a>แก้ไข</a>
+                  <Divider type="vertical" />
+                  <a>ลบ</a>
+                </span>
+              )}
+            />
+          </Table>
         </Card>
       </section>
     </div>
