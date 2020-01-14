@@ -1,7 +1,8 @@
 import React from 'react'
-import { Card, Calendar, Badge } from 'antd'
+import { Card, Calendar, Badge, Popover } from 'antd'
 import { Button } from 'antd';
 import { Link } from "react-router-dom";
+import faker from 'faker'
 
 const getListData = (value) => {
   let listData;
@@ -28,11 +29,20 @@ const getListData = (value) => {
 
 const dateCellRender = (value) => {
   const listData = getListData(value);
+  const content = (
+    <div>
+      <p>เลขที่ PO: {faker.random.number()}</p>
+      <p>ชื่อลูกค้า: {faker.name.findName()}</p>
+      <p>จำนวน: {faker.random.number(100)}</p>
+    </div>
+  );
   return (
     <ul className="events">
       {listData.map(item => (
         <li key={item.content}>
-          <Badge status={item.type} text={item.content} />
+          <Popover content={content} title="รายละเอียด" trigger="hover">
+            <Badge status={item.type} text={item.content} />
+          </Popover>
         </li>
       ))}
     </ul>
