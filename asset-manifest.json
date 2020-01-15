@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/freelance-stock-qc-demo/static/css/main.9811dfd1.chunk.css",
-    "main.js": "/freelance-stock-qc-demo/static/js/main.84211b2d.chunk.js",
-    "main.js.map": "/freelance-stock-qc-demo/static/js/main.84211b2d.chunk.js.map",
+    "main.js": "/freelance-stock-qc-demo/static/js/main.e2ed3bf2.chunk.js",
+    "main.js.map": "/freelance-stock-qc-demo/static/js/main.e2ed3bf2.chunk.js.map",
     "runtime-main.js": "/freelance-stock-qc-demo/static/js/runtime-main.730c0c27.js",
     "runtime-main.js.map": "/freelance-stock-qc-demo/static/js/runtime-main.730c0c27.js.map",
     "static/css/2.35f98baf.chunk.css": "/freelance-stock-qc-demo/static/css/2.35f98baf.chunk.css",
     "static/js/2.63525e7a.chunk.js": "/freelance-stock-qc-demo/static/js/2.63525e7a.chunk.js",
     "static/js/2.63525e7a.chunk.js.map": "/freelance-stock-qc-demo/static/js/2.63525e7a.chunk.js.map",
     "index.html": "/freelance-stock-qc-demo/index.html",
-    "precache-manifest.6b33f1383ff2ccf8c5b3c573729d51e5.js": "/freelance-stock-qc-demo/precache-manifest.6b33f1383ff2ccf8c5b3c573729d51e5.js",
+    "precache-manifest.c2cb5d9e56b1f0288d5f2b77c4420ae3.js": "/freelance-stock-qc-demo/precache-manifest.c2cb5d9e56b1f0288d5f2b77c4420ae3.js",
     "service-worker.js": "/freelance-stock-qc-demo/service-worker.js",
     "static/css/2.35f98baf.chunk.css.map": "/freelance-stock-qc-demo/static/css/2.35f98baf.chunk.css.map",
     "static/css/main.9811dfd1.chunk.css.map": "/freelance-stock-qc-demo/static/css/main.9811dfd1.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.35f98baf.chunk.css",
     "static/js/2.63525e7a.chunk.js",
     "static/css/main.9811dfd1.chunk.css",
-    "static/js/main.84211b2d.chunk.js"
+    "static/js/main.e2ed3bf2.chunk.js"
   ]
 }

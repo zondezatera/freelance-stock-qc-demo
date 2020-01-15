@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d1314f7745d88aaf06c8abb9ab943ec",
+    "revision": "2d4bb931432a45485f931e0dd4e0aa76",
     "url": "/freelance-stock-qc-demo/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/freelance-stock-qc-demo/static/css/2.35f98baf.chunk.css"
   },
   {
-    "revision": "ada13b0ed863c6b14831",
+    "revision": "84f16a7321ecd6c96453",
     "url": "/freelance-stock-qc-demo/static/css/main.9811dfd1.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/freelance-stock-qc-demo/static/js/2.63525e7a.chunk.js.LICENSE"
   },
   {
-    "revision": "ada13b0ed863c6b14831",
-    "url": "/freelance-stock-qc-demo/static/js/main.84211b2d.chunk.js"
+    "revision": "84f16a7321ecd6c96453",
+    "url": "/freelance-stock-qc-demo/static/js/main.e2ed3bf2.chunk.js"
   },
   {
     "revision": "688b6f43c34c8ddb29fb",
